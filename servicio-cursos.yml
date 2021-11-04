@@ -10,10 +10,11 @@ spring:
       naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 eureka:
   client:
+    register-with-eureka: true
+    fetch-registry: true
     serviceUrl:
       defaultZone: http://192.168.1.44:8761/eureka
   instance:
-    prefer-ip-address: true
     hostname: localhost
 server:
   port: 8080 
